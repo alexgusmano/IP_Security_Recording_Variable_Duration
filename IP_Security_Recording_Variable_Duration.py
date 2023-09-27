@@ -56,7 +56,7 @@ start_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 # Define the codec and create a VideoWriter object with the start time in the filename
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-output_file = f'{output_folder}/recording_{start_time}.avi'
+output_file = f'{output_folder}/Camera_Feed_{start_time}.avi'
 out = cv2.VideoWriter(output_file, fourcc, 20.0, (640, 480))  # You may need to adjust the resolution and frame rate
 
 # Record for n hours 
