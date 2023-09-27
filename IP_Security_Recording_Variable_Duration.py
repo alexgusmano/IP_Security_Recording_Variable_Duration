@@ -34,7 +34,7 @@ desired_start_time = eg.enterbox(msg, title)
 
 if desired_start_time is None:
     exit()  # The user clicked Cancel
-    
+            
 
 # Prompt the user for the desired duration
 msg = "Enter the desired recording length in hours:"
@@ -62,6 +62,7 @@ out = cv2.VideoWriter(output_file, fourcc, 20.0, (640, 480))  # You may need to 
 # Record for n hours 
 record_duration = desired_duration*60*60 # converts hours in total seconds
 start_timestamp = time.time()
+#Alexander Gusmano
 
 while time.time() - start_timestamp < record_duration:
     ret, frame = cap.read()  # Read a frame from the camera
